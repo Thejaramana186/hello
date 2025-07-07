@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Flask Web Application</title>
+    <title>Hello World</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
@@ -13,7 +13,7 @@
         <header class="header">
             <div class="logo">
                 <div class="logo-icon">🌟</div>
-                <h1>Flask Web Application</h1>
+                <h1>Hello World</h1>
             </div>
             <div class="status-indicator">
                 <div class="pulse"></div>
@@ -23,8 +23,8 @@
 
         <main class="main-content">
             <section class="hero">
-                <h2>Welcome to Your Beautiful Flask App</h2>
-                <p>This Flask web application automatically refreshes every 10 seconds to demonstrate real-time updates and modern web development.</p>
+                <h2>Welcome to Hello World</h2>
+                <p>This Hello World  automatically refreshes every 10 seconds to demonstrate real-time updates and modern web development.</p>
                 <div class="refresh-timer">
                     <div class="timer-circle">
                         <span id="countdown">10</span>
@@ -33,140 +33,6 @@
                 </div>
             </section>
 
-            <section class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🐍</div>
-                    <h3>Flask Framework</h3>
-                    <p>Built with Python Flask for robust backend functionality and easy scalability</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Modern Design</h3>
-                    <p>Beautiful glassmorphism UI with smooth animations and responsive layout</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Auto Refresh</h3>
-                    <p>Intelligent auto-refresh with visual countdown and pause on tab switch</p>
-                </div>
+            
 
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Production Ready</h3>
-                    <p>Template system, static files, API endpoints, and proper Flask structure</p>
-                </div>
-            </section>
-
-            <section class="gallery">
-                <h3>Image Gallery</h3>
-                <div class="image-grid">
-                    <div class="image-card">
-                        <img src="https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mountain landscape" loading="lazy">
-                        <div class="image-overlay">
-                            <h4>Mountain Vista</h4>
-                            <p>Breathtaking mountain scenery</p>
-                        </div>
-                    </div>
-                    
-                    <div class="image-card">
-                        <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ocean waves" loading="lazy">
-                        <div class="image-overlay">
-                            <h4>Ocean Waves</h4>
-                            <p>Serene ocean waters</p>
-                        </div>
-                    </div>
-                    
-                    <div class="image-card">
-                        <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Forest path" loading="lazy">
-                        <div class="image-overlay">
-                            <h4>Forest Path</h4>
-                            <p>Mystical forest trail</p>
-                        </div>
-                    </div>
-                    
-                    <div class="image-card">
-                        <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=400" alt="City skyline" loading="lazy">
-                        <div class="image-overlay">
-                            <h4>City Lights</h4>
-                            <p>Urban nighttime beauty</p>
-                        </div>
-                    </div>
-
-                    <div class="image-card">
-                        <img src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Desert sunset" loading="lazy">
-                        <div class="image-overlay">
-                            <h4>Desert Sunset</h4>
-                            <p>Golden hour in the desert</p>
-                        </div>
-                    </div>
-
-                    <div class="image-card">
-                        <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lake reflection" loading="lazy">
-                        <div class="image-overlay">
-                            <h4>Lake Reflection</h4>
-                            <p>Perfect mirror on water</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="api-demo">
-                <h3>Flask API Integration</h3>
-                <div class="api-cards">
-                    <div class="api-card">
-                        <h4>Server Stats</h4>
-                        <div id="server-stats" class="api-content">
-                            <div class="loading">Loading...</div>
-                        </div>
-                        <button onclick="fetchServerStats()" class="api-button">Refresh Stats</button>
-                    </div>
-                    
-                    <div class="api-card">
-                        <h4>Health Check</h4>
-                        <div id="health-status" class="api-content">
-                            <div class="loading">Loading...</div>
-                        </div>
-                        <button onclick="checkHealth()" class="api-button">Check Health</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="stats">
-                <div class="stat-item">
-                    <div class="stat-number" id="page-loads">1</div>
-                    <div class="stat-label">Page Loads</div>
-                </div>
-                
-                <div class="stat-item">
-                    <div class="stat-number" id="current-time"></div>
-                    <div class="stat-label">Current Time</div>
-                </div>
-                
-                <div class="stat-item">
-                    <div class="stat-number">Flask</div>
-                    <div class="stat-label">Framework</div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="stat-number">10s</div>
-                    <div class="stat-label">Refresh Interval</div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>&copy; 2025 Beautiful Flask App. Built with Python Flask Framework.</p>
-            <div class="footer-links">
-                <a href="#" onclick="location.reload()">Manual Refresh</a>
-                <a href="#" onclick="toggleAutoRefresh()">Toggle Auto-refresh</a>
-                <a href="/health" target="_blank">Health Check</a>
-                <a href="/api/stats" target="_blank">API Stats</a>
-            </div>
-        </footer>
-    </div>
-
-    <script src="{{ url_for('static', filename='js/refresh.js') }}"></script>
-</body>
-</html>
+                          
